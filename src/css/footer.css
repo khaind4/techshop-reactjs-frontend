@@ -1,0 +1,34 @@
+.footer {
+  height: 320px;
+  background-color: white;
+  width: 100%;
+  border-top: solid whitesmoke;
+
+  display: flex;
+  justify-content: center;
+}
+
+.footer-component {
+  height: 100%;
+  width: 21.5%;
+}
+
+.br {
+  display: block;
+  margin: 8px 0;
+}
+
+.payment-image {
+  width: 55%;
+  height: 16%;
+  margin: 10px 0;
+}
+
+.bo-cong-thuong {
+  width: 45%;
+  height: 22%;
+}
+
+.highlight-text {
+  color: #288ad6;
+}

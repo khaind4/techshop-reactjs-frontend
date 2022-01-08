@@ -1,0 +1,62 @@
+.customer-wrapper {
+  margin-top: 120px;
+  margin-bottom: 30px;
+  width: 86%;
+  min-height: 600px;
+
+  display: flex;
+}
+
+.orderList {
+  width: 50%;
+  height: 100%;
+  margin-right: 2%;
+  background-color: white;
+  min-height: 400px;
+}
+
+.customer {
+  width: 48%;
+  height: 600px;
+  padding-bottom: 40px;
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+}
+
+.customerForm {
+  width: 70%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1080px) {
+  .customer-wrapper {
+    width: 99%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .customer-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .orderList {
+    width: 99%;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .customer {
+    width: 99%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .customerForm {
+    width: 85%;
+  }
+}

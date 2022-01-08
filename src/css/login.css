@@ -1,0 +1,54 @@
+.login {
+  margin-top: 120px;
+  margin-bottom: 30px;
+  width: 35%;
+  height: 600px;
+  padding-bottom: 40px;
+  background-color: white;
+  border: 1px solid lightgray;
+
+  display: flex;
+  justify-content: center;
+}
+
+.loginForm {
+  width: 70%;
+  height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.loginButton {
+  height: 60px;
+}
+
+.isSignuped {
+  font-size: 18px;
+}
+
+.isSignupedLink {
+  text-decoration: none;
+  color: red;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1080px) {
+  .login {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .login {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .loginForm {
+    width: 85%;
+  }
+}

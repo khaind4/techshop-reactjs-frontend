@@ -1,0 +1,63 @@
+.headerBar {
+  color: white;
+  height: 100%;
+  width: 25%;
+  margin-right: 7%;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+}
+
+.headerBarComponent {
+  width: 50%;
+  height: 80%;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerBarComponent:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.icon {
+  font-size: 150%;
+  padding-top: 3px;
+}
+
+.barText {
+  font-size: 130%;
+  text-align: center;
+  margin-right: 5%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .barText {
+    display: none;
+  }
+  .headerBar {
+    width: 20%;
+    margin-right: 3%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .headerBar {
+    width: 25%;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .headerBar {
+    width: 40%;
+    margin-left: auto;
+  }
+}

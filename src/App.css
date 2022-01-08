@@ -1,0 +1,14 @@
+.App {
+  width: 100%;
+
+  background-image: url("https://cdn.tgdd.vn/mwgcart/mwg-site/ContentMwg/images/noel/BG-min.png?v=2");
+  background-color: #daf5ff;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-y: 80px;
+  background-size: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
