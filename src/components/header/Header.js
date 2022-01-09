@@ -7,12 +7,14 @@ import HeaderBar from './HeaderBar.js'
 const Header = () => {
 
     return (
-        <div className='header'>
-            <Link to='/' className='shopNameLink'>
-                <div className='shopName'>TechShop</div>
-            </Link>
-            <Search />
-            <HeaderBar />
+        <div className='header-wrapper'>
+            <div className='header'>
+                <Link to='/' className='shopNameLink'>
+                    <div className='shopName'>TechShop</div>
+                </Link>
+                <Search />
+                <HeaderBar />
+            </div>
         </div>
     )
 }

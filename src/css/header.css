@@ -1,13 +1,22 @@
-.header {
+.header-wrapper {
   height: 90px;
   width: 100%;
   background-color: darkred;
-  padding: auto;
 
   z-index: 3;
   display: flex;
-  align-items: center;
+  justify-content: center;
   position: fixed;
+}
+
+.header {
+  width: 100%;
+  max-width: 2200px;
+  height: 90px;
+  padding: auto;
+
+  display: flex;
+  align-items: center;
 }
 
 .shopNameLink {
