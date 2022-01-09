@@ -1,9 +1,10 @@
 .home {
   margin-top: 120px;
   width: 86%;
+  max-width: 1920px;
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1366px) {
   .home {
     width: 100%;
   }

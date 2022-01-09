@@ -2,8 +2,9 @@
   height: 90px;
   width: 100%;
   background-color: darkred;
-  z-index: 3;
+  padding: auto;
 
+  z-index: 3;
   display: flex;
   align-items: center;
   position: fixed;
