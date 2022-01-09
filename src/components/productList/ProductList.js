@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
-import { Pagination, Breadcrumbs } from '@mui/material'
+import { Pagination, Breadcrumbs, responsiveFontSizes } from '@mui/material'
 import compareFunc from 'compare-func'
 import '../../css/productList.css'
 import Product from './Product'
@@ -10,7 +10,7 @@ const ProductList = () => {
     const {s} = useParams()
     const [products, setProducts] = useState([])
     const [title, setTitle] = useState([])
-    const [sort, setSort] = useState('ascName')
+    const [sort, setSort] = useState('desPrice')
     const navigate = useNavigate()
 
     useEffect(() => {
@@ -20,13 +20,13 @@ const ProductList = () => {
             // search
             if(data.slice(0,6) ==='search') {
                 const res = await searchProductAPI(data.slice(7))
-                setProducts(res)
+                setProducts(res.sort(compareFunc('price')).reverse())
                 if(res.length>0) setTitle("Kết quả tìm kiếm ")
                 else setTitle("Không tìm thấy sản phẩm")
             } else {
                 // product category
                 const res = await findByCategoryAPI(data)
-                setProducts(res)
+                setProducts(res.sort(compareFunc('price')).reverse())
                 switch(data) {
                     case 'phone': return setTitle("Điện thoại")
                     case 'laptop': return setTitle("Laptop")
@@ -90,7 +90,7 @@ const ProductList = () => {
                 {products.map(item => <Product key={item.pid} product={item} />)}
             </div>
 
-            <Pagination count={1} size='large' className='pagination'/>
+            <Pagination count={1} size='large' className='pagination' style={{"padding":"30px 0 20px 0"}} />
         </div>
     )
 }
