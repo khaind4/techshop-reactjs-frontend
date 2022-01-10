@@ -78,7 +78,7 @@ const ProductList = () => {
             </div> 
 
             <div className='sort-select-wrapper'>
-                <select name="cars" id="cars" className='sort-select' value={sort} onChange={onChangeSort}>
+                <select className='sort-select' value={sort} onChange={onChangeSort}>
                     <option className='select-option' value="ascPrice">Giá: tăng dần </option>
                     <option className='select-option' value="desPrice">Giá: giảm dần </option>
                     <option className='select-option' value="ascName">Tên: tăng dần </option>
