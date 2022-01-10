@@ -1,6 +1,6 @@
 .product {
   height: 400px;
-  width: 18.871%;
+  width: 18.879%;
   padding: 10px 0.5%;
   border: 1px solid #e6e6e6;
   text-decoration: none;
@@ -57,6 +57,12 @@
   font-size: 20px;
   font-weight: bold;
   color: red;
+}
+
+@media only screen and (min-width: 2200px) {
+  .product {
+    width: 18.84%;
+  }
 }
 
 @media only screen and (max-width: 1366px) {
