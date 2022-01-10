@@ -2,6 +2,7 @@
   margin-top: 120px;
   margin-bottom: 30px;
   width: 86%;
+  max-width: 1920px;
 
   display: flex;
 }
@@ -15,12 +16,10 @@
 
 .cright {
   margin-left: 1%;
-  width: 22%;
+  width: 27%;
 
   display: flex;
   flex-direction: column;
-  position: fixed;
-  padding-left: 62%;
 }
 
 .cartImage {
@@ -104,7 +103,6 @@
   }
   .cright {
     width: 29%;
-    padding-left: 69%;
   }
 }
 
@@ -119,9 +117,7 @@
   }
   .cright {
     width: 99%;
-    padding-left: 0;
     margin-left: 0;
     margin-top: 20px;
-    position: static;
   }
 }

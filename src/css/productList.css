@@ -1,6 +1,7 @@
 .product-list {
   padding: 0 1% 30px 1%;
   width: 86%;
+  max-width: 1920px;
   margin-top: 120px;
 }
 

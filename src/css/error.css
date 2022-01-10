@@ -1,10 +1,10 @@
 .error {
   margin-top: 120px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   background-color: white;
-  width: 66%;
-  height: 500px;
-  padding: 0 10%;
+  width: 50%;
+  max-width: 1920px;
+  height: 440px;
 
   display: flex;
   align-items: center;
